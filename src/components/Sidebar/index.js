@@ -22,21 +22,4 @@ const Sidebar = ({ modules, toggleLesson }) => {
       </aside>
     );
 }
-
-function mapStateToProps(state) {
-  return {
-    modules: state.courseReducer.modules
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    toggleLesson: (module, lesson) => dispatch(courseActions.toggleLesson(module, lesson))
-  }
-}
-
-export default connect(
-  mapStateToProps, 
-  mapDispatchToProps
-)(Sidebar);
-
+console.log("SAVE ALTERATIONS")
