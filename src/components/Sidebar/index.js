@@ -39,3 +39,9 @@ export default connect(
   mapDispatchToProps
 )(Sidebar);
 
+
+
+
+
+
+console.log("IT'S WORK")
