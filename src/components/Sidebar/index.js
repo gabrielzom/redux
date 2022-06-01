@@ -30,8 +30,9 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(courseActions, dispatch)
-  
+  return {
+    toggleLesson: (module, lesson) => dispatch(courseActions.toggleLesson(module, lesson))
+  }
 }
 
 export default connect(
