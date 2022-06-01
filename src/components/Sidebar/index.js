@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import * as courseActions from "../../store/actions/course";
 import { bindActionCreators } from "redux";
+import './index.css'
 
 const Sidebar = ({ modules, toggleLesson }) => {
     return (
@@ -12,8 +13,7 @@ const Sidebar = ({ modules, toggleLesson }) => {
             <ul>
               {module.lessons.map(lesson => (
                 <li key={lesson.id}>
-                  {lesson.title}
-                  <button onClick={() => toggleLesson(module, lesson)}>Select</button>
+                  <button onClick={() => toggleLesson(lesson, module)}>{lesson.title}</button>
                 </li>
               ))}
             </ul>

@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Video = ({ activeLesson, activeModule }) => {
+const Video = ({ activeModule, activeLesson }) => {
   return (
     <div>
       <strong>Module: {activeModule.title}</strong> | <span>Lesson: {activeLesson.title}</span>
