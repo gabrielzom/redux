@@ -45,4 +45,4 @@ export default connect(
 
 
 
-console.log("IT'S WORK")
+console.log("WOW !")
