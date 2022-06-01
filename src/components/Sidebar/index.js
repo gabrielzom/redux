@@ -40,9 +40,3 @@ export default connect(
   mapDispatchToProps
 )(Sidebar);
 
-
-
-
-
-
-console.log("WOW !")
